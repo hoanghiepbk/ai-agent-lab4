@@ -1,0 +1,95 @@
+﻿c:\Users\ADMIN\H\ai-thuc-chien\Day04\lab4_agent\venv\Sc
+ripts\python.exe : C:\Users\ADMIN\H\ai-thuc-chien\Day04
+\lab4_agent\venv\Lib\site-packages\langchain_core\_api\
+deprecation.py:25: UserWarning: Core Pydantic V1 
+functionality isn't compatible with Python 3.14 or 
+greater.
+At line:1 char:1
++ c:\Users\ADMIN\H\ai-thuc-chien\Day04\lab4_agent\venv\
+Scripts\python.e ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\ 
+   ADMIN\....14 or greater.:String) [], RemoteExcepti  
+  on
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from pydantic.v1.fields import FieldInfo as 
+FieldInfoV1
+============================================================
+TEST 1: search_flights('H├á Nß╗Öi', '─É├á Nß║╡ng')
+============================================================
+Γ£ê∩╕Å T├¼m thß║Ñy 4 chuyß║┐n bay tß╗½ H├á Nß╗Öi ─æß║┐n ─É├á Nß║╡ng:
+
+  1. Vietnam Airlines | Khß╗ƒi h├ánh: 06:00 ΓåÆ ─Éß║┐n: 07:20 | Hß║íng: economy | Gi├í: 1.450.000─æ
+  2. VietJet Air | Khß╗ƒi h├ánh: 08:30 ΓåÆ ─Éß║┐n: 09:50 | Hß║íng: economy | Gi├í: 890.000─æ
+  3. Bamboo Airways | Khß╗ƒi h├ánh: 11:00 ΓåÆ ─Éß║┐n: 12:20 | Hß║íng: economy | Gi├í: 1.200.000─æ
+  4. Vietnam Airlines | Khß╗ƒi h├ánh: 14:00 ΓåÆ ─Éß║┐n: 15:20 | Hß║íng: business | Gi├í: 2.800.000─æ
+
+============================================================
+TEST 2: search_flights reverse ('─É├á Nß║╡ng', 'H├á Nß╗Öi')
+============================================================
+Kh├┤ng t├¼m thß║Ñy chuyß║┐n bay tß╗½ ─É├á Nß║╡ng ─æß║┐n H├á Nß╗Öi.
+Tuy nhi├¬n, c├│ chuyß║┐n bay chiß╗üu ng╞░ß╗úc tß╗½ H├á Nß╗Öi ─æß║┐n ─É├á Nß║╡ng. Bß║ín c├│ muß╗æn xem kh├┤ng?
+
+============================================================
+TEST 3: search_flights not found
+============================================================
+Kh├┤ng t├¼m thß║Ñy chuyß║┐n bay tß╗½ ─É├á Nß║╡ng ─æß║┐n Ph├║ Quß╗æc.
+
+============================================================
+TEST 4: search_hotels('Ph├║ Quß╗æc', max_price=1000000)
+============================================================
+≡ƒÅ¿ T├¼m thß║Ñy 2 kh├ích sß║ín tß║íi Ph├║ Quß╗æc (gi├í d╞░ß╗¢i 1.000.000─æ/─æ├¬m):
+
+  1. 9Station Hostel Γ¡ÉΓ¡É
+     Gi├í: 200.000─æ/─æ├¬m | Khu vß╗▒c: D╞░╞íng ─É├┤ng | Rating: 4.5/5.0
+  2. Lahana Resort Γ¡ÉΓ¡ÉΓ¡É
+     Gi├í: 800.000─æ/─æ├¬m | Khu vß╗▒c: D╞░╞íng ─É├┤ng | Rating: 4.0/5.0
+
+============================================================
+TEST 5: search_hotels('─É├á Nß║╡ng') - tß║Ñt cß║ú
+============================================================
+≡ƒÅ¿ T├¼m thß║Ñy 5 kh├ích sß║ín tß║íi ─É├á Nß║╡ng:
+
+  1. Christina's Homestay Γ¡ÉΓ¡É
+     Gi├í: 350.000─æ/─æ├¬m | Khu vß╗▒c: An Th╞░ß╗úng | Rating: 4.7/5.0
+  2. Memory Hostel Γ¡ÉΓ¡É
+     Gi├í: 250.000─æ/─æ├¬m | Khu vß╗▒c: Hß║úi Ch├óu | Rating: 4.6/5.0
+  3. M╞░ß╗¥ng Thanh Luxury Γ¡ÉΓ¡ÉΓ¡ÉΓ¡ÉΓ¡É
+     Gi├í: 1.800.000─æ/─æ├¬m | Khu vß╗▒c: Mß╗╣ Kh├¬ | Rating: 4.5/5.0
+  4. Sala Danang Beach Γ¡ÉΓ¡ÉΓ¡ÉΓ¡É
+     Gi├í: 1.200.000─æ/─æ├¬m | Khu vß╗▒c: Mß╗╣ Kh├¬ | Rating: 4.3/5.0
+  5. Fivitel Danang Γ¡ÉΓ¡ÉΓ¡É
+     Gi├í: 650.000─æ/─æ├¬m | Khu vß╗▒c: S╞ín Tr├á | Rating: 4.1/5.0
+
+============================================================
+TEST 6: calculate_budget(5000000, 'v├⌐_m├íy_bay:1100000,kh├ích_sß║ín:1600000')
+============================================================
+≡ƒÆ░ Bß║úng chi ph├¡:
+
+  - V├⌐ M├íy Bay: 1.100.000─æ
+  - Kh├ích Sß║ín: 1.600.000─æ
+  ------------------------------
+  Tß╗òng chi: 2.700.000─æ
+  Ng├ón s├ích: 5.000.000─æ
+  Γ£à C├▓n lß║íi: 2.300.000─æ
+
+============================================================
+TEST 7: calculate_budget v╞░ß╗út ng├ón s├ích
+============================================================
+≡ƒÆ░ Bß║úng chi ph├¡:
+
+  - V├⌐ M├íy Bay: 1.500.000─æ
+  - Kh├ích Sß║ín: 1.600.000─æ
+  ------------------------------
+  Tß╗òng chi: 3.100.000─æ
+  Ng├ón s├ích: 2.000.000─æ
+  ΓÜá∩╕Å V╞»ß╗óT NG├éN S├üCH: 1.100.000─æ! Cß║ºn ─æiß╗üu chß╗ënh.
+
+============================================================
+TEST 8: calculate_budget format sai
+============================================================
+Γ¥î Lß╗ùi format: 'v├⌐_m├íy_bay-1100000' kh├┤ng ─æ├║ng ─æß╗ïnh dß║íng. Vui l├▓ng d├╣ng format 't├¬n_khoß║ún:sß╗æ_tiß╗ün' (VD: 'v├⌐_m├íy_bay:890000,kh├ích_sß║ín:650000')
+
+ALL TESTS COMPLETED!
